@@ -1,0 +1,17 @@
+diff --git a/node_modules/@angular-devkit/build-angular/src/webpack/configs/common.js b/node_modules/@angular-devkit/build-angular/src/webpack/configs/common.js
+index be26cc3..98218b0 100644
+--- a/node_modules/@angular-devkit/build-angular/src/webpack/configs/common.js
++++ b/node_modules/@angular-devkit/build-angular/src/webpack/configs/common.js
+@@ -369,6 +369,20 @@ function getCommonConfig(wco) {
+             // Show an error for missing exports instead of a warning.
+             strictExportPresence: true,
+             rules: [
++                {
++                    test: /\.haml$/,
++                    use: [
++                        { loader: 'haml-haml-loader' }
++                    ]
++                },   
+                 {
+                     // Mark files inside `@angular/core` as using SystemJS style dynamic imports.
+                     // Removing this will cause deprecation warnings to appear.
