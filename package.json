@@ -16,7 +16,7 @@
   },
   "homepage": "https://www.npmjs.com/package/haml-haml-loader",
   "dependencies": {
-    "haml": "^0.4.3",
+    "haml": "git+https://github.com/chibisuke/haml-js.git",
     "loader-utils": "0.2.x"
   }
 }
