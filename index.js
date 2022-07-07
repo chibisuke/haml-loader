@@ -2,7 +2,7 @@ module.exports = function (source) {
   var loaderUtils, haml, query, result
   this.cacheable && this.cacheable(true)
   loaderUtils = require("loader-utils")
-  haml = require("haml")
+  haml = require("@gymcore/haml")
   query = loaderUtils.parseQuery(this.query)
   try {
     result = haml.render(source, query)
