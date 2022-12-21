@@ -1,6 +1,6 @@
 {
   "name": "@gymcore/haml-loader",
-  "publishConfig": { "access": "public", "registry": "http://git01.ad.gymcore.ag/npm/" },
+  "publishConfig": { "access": "public", "registry": "http://git01.ad.gymcore.ag/api/v4/projects/25/packages/npm/" },
   "version": "0.1.0",
   "description": "haml-loader fork; webpack loader using 'haml' instead of 'haml-coffee'",
   "main": "index.js",
